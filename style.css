@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap);
+
+*{
+    box-sizing: border-box;
+    font-family: outfit, sans-serif;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    max-width: 1440px;
+    background-color: var(--main-bg);
+}
+
+.card {
+    margin: 10% auto;
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--card-bg);
+    box-shadow: 0px 30px 20px 20px rgba(0, 1, 19, 0.329);
+}
+
+/* card image style */
+.equilibrium {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.view:hover {
+    background-color: #00fff750;
+}
+
+#view-icon {
+    display: none;
+    margin: 120px auto;
+}
+
+.view:hover > #view-icon {
+    display: block;
+}
+
+#nft-image {
+    width: 280px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#nft-image:hover ~ #view {
+    display: block;
+}
+
+.nft-name {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    text-align: start;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nft-name:hover {
+    color: var(--cyan);
+}
+
+/* price section */
+.price-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#price {
+    color: var(--cyan);
+    font-weight: 400;
+    white-space: nowrap;
+
+}
+
+#price img,
+#days-left img {
+    margin-bottom: -3px;
+}
+
+#price span,
+#days-left span {
+    margin: auto 5px;
+}
+
+#days-left span {
+    color: var(--soft-blue);
+}
+
+p {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.line {
+    background-color: var(--line-color);
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* creator infos */
+.creator {
+    display: inline-flex;
+    height: 50px;
+}
+
+.creator img {
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.copyright {
+    margin: auto 20px;
+    color: var(--soft-blue);
+}
+#jules {
+    text-decoration: none;
+    color: white;
+}
+
+#jules:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+/* attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--soft-blue);
+    margin-bottom: 20px;
+    border-top: 1px solid var(--line-color);
+    padding-top: 20px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.attribution a:hover {
+    color: var(--cyan);
+
+}
