@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
   <link rel="stylesheet" href="./style.css" />
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
-<body>
-<main>
-  <!-- NFT card -->
-  <div class="card">
-    <div class="equilibrium">
-      <!-- view icon hidden by default -->
-      <div class="view">
-        <img
-        src="./assets/images/icon-view.svg"
-        id="view-icon"
-        alt="icon-view"
-        title="view" />
-      </div>
-      <!-- NFT image -->
-      <img
-       src="./assets/images/image-equilibrium.jpg"
-       id="nft-image"
-       alt="image-equilibrium"
-       title="equilibrium" />
-    </div>
-    <a href="#" class="nft-name" title="Equilibrium #3429">  Equilibrium #3429    </a>
-    <p>  
-      Our Equilibrium collection promotes balance and calm.
-    </p>
-    <div class="price-section">
-      <div id="price">
-        <img src="./assets/images/icon-ethereum.svg" alt="icon-ethereum" title="Ethereum" />
-        <span>  0.041 ETH        </span>
-      </div>
-      <div id="days-left">
-        <img src="./assets/images/icon-clock.svg" alt="icon clock" title="clock" />
-        <span>3 days left</span>
-      </div>
-    </div>
-    <div class="line"></div>
-    <div class="creator">
-      <img src="./assets/images/image-avatar.png" alt="Jules Wyvern avatar" title="Jules Wyvern"/>
-      <div class="copyright">
-          Creation of <a href="#" id="jules" title="Jules Wyvern">Jules Wyvern</a>
-      </div>
-    </div>
-  </div>
-</main>
-  
-  <div class="attribution">
-    Challenge by 
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-      Frontend Mentor
-    </a>. 
-    Coded by 
-    <a href="https://github.com/mr3wi" title="Github profile">
-      Wilfried WIWI
-    </a>.
-  </div>
 
+<body>
+  <div class="container">
+    
+    <main>
+      <h1>NFT Preview component</h1>
+      <div class="card">
+        <div class="card-image">
+          <div class="view-icon">
+            <img src="./assets/images/icon-view.svg" id="view-icon" alt="icon-view" title="view" />
+          </div>
+          <img src="./assets/images/image-equilibrium.jpg" class="nft-image" alt="image-equilibrium"
+            title="equilibrium" />
+        </div>
+        <h3 class="card-title">
+          <a href="#" class="nft-title" title="Equilibrium #3429">
+            Equilibrium #3429
+          </a>
+        </h3>
+        <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="price-section">
+          <div class="product-price">
+            <img src="./assets/images/icon-ethereum.svg" alt="icon-ethereum" title="Ethereum" />
+            <span> 0.041 ETH </span>
+          </div>
+          <div class="days-left">
+            <img src="./assets/images/icon-clock.svg" alt="icon clock" title="clock" />
+            <span>3 days left</span>
+          </div>
+        </div>
+
+        <hr />
+        <div class="card-footer">
+          <img src="./assets/images/image-avatar.png" alt="Jules Wyvern avatar" title="Jules Wyvern" />
+          <span>
+            Creation of <a href="#" title="Jules Wyvern">Jules Wyvern</a>
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor </a>. Coded by
+        <a href="https://github.com/mr3wi" title="Github profile">
+          Wilfried WIWI </a>.
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
