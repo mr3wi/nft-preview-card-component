@@ -21,6 +21,7 @@ body {
     max-width: 1440px;
     background-color: var(--main-bg);
     font-family: outfit, sans-serif;
+    height: 100%;
 }
 
 a {
@@ -31,16 +32,22 @@ h1 {
     display: none;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .card {
-    margin: 10% auto;
-    width: 320px;
+    width: 350px;
+    height: max-content;
     padding: 20px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
     background-color: var(--card-bg);
-    box-shadow: 0px 30px 20px 20px rgba(0, 1, 19, 0.329);
 }
 
 /* card image style */
@@ -48,6 +55,11 @@ h1 {
     position: relative;
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.card .card-image img.nft-image {
+    width: 100%;
 }
 
 .card .view-icon {
@@ -88,29 +100,29 @@ h1 {
     color: var(--cyan);
 }
 
-/* price section */
-.price-section,
-.price-section>div {
+.card p {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* price row */
+.price-row,
+.price-row > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.price-section span {
+.price-row span {
     color: var(--cyan);
     font-weight: 400;
     white-space: nowrap;
     margin: auto 5px;
 }
 
-.days-left span {
+.align-right span {
     color: var(--soft-blue);
-}
-
-p {
-    color: var(--soft-blue);
-    font-weight: 300;
-    font-size: 18px;
 }
 
 hr {
@@ -148,14 +160,14 @@ hr {
     cursor: pointer;
 }
 
+
 /* attribution */
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding: 10px 0;
     color: var(--soft-blue);
-    margin-bottom: 20px;
     border-top: 1px solid var(--line-color);
-    padding-top: 20px;
 }
 
 .attribution a {
